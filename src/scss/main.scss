@@ -1,14 +1,9 @@
-$blue: #3bbfce;
+@import "vars";
+@import "libs";
+@import "fonts";
 
-a{
-    color: #cccccc;
+.header{
+
 }
-.row{
-    display: flex;
-}
-p{
-    color: $blue;
-}
-h1{
-    color: $blue;
-}
+
+@import "media";

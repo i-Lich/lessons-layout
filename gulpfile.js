@@ -16,14 +16,16 @@ const browserSync = require('browser-sync').create();
 //scss файлы
 const cssFiles = [
     './src/scss/main.scss',
-    './src/scss/media.scss'
-]
+    './src/scss/slick.css'
+];
 
 //js файлы
 const jsFiles = [
+    './src/js/jquery-3.4.1.min.js',
+    './src/js/slick.min.js',
     './src/js/lib.js',
     './src/js/main.js'
-]
+];
 //стили
 function styles() {
     return gulp.src(cssFiles)
