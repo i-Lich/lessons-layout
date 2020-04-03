@@ -16,7 +16,8 @@ const browserSync = require('browser-sync').create();
 //scss файлы
 const cssFiles = [
     './src/scss/main.scss',
-    './src/scss/slick.css'
+    './src/scss/slick.css',
+    './node_modules/animate.css/animate.css'
 ];
 
 //js файлы

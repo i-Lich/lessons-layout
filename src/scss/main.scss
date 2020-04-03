@@ -180,6 +180,21 @@
 
   }
 }
+.header__map{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.header__arrows{
+  position: absolute;
+  left: 210px;
+  bottom: 40px;
+  z-index: 3;
+}
+
+
 
 
 
