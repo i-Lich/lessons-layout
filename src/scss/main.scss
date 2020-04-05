@@ -24,8 +24,6 @@
   right: 80px;
   bottom: 115px;
   text-align: right;
-  color: #FFFFFF;
-  text-transform: uppercase;
 }
 
 .slider-item__info-sutitle{
@@ -69,7 +67,6 @@
   max-width: 920px;
   width: 100%;
   z-index: 5;
-  color: #FFFFFF;
   margin: 0;
   .slick-current{
     .dots-box{
@@ -86,7 +83,6 @@
   justify-content: space-between;
   height: 28px;
   align-items: center;
-  border-top: 4px solid #FFFFFF;
   padding-top: 6px;
   &__number{
     font-weight: 800;
@@ -96,6 +92,7 @@
   &__name{
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -107,15 +104,12 @@
   border-right: 1px solid rgba(#fff, .25);
   height: 100vh;
   text-align: center;
-  color: #FFFFFF;
 }
 
 .header__title{
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
-  color: #FFFFFF;
   opacity: 0.07;
   max-width: 467px;
   position: absolute;
@@ -127,7 +121,6 @@
 .menu{
   padding-top: 40px;
     a{
-      color: #FFFFFF;
       span{
         display: block;
         font-weight: 500;
@@ -136,6 +129,7 @@
         letter-spacing: 3px;
         padding-top: 6px;
         margin-bottom: 20px;
+        text-transform: capitalize;
       }
   }
 }
@@ -168,6 +162,7 @@
   letter-spacing: 1.05px;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before {
     content: "";
     position: absolute;
@@ -194,7 +189,39 @@
   z-index: 3;
 }
 
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 4s infinite 5s;
+}
 
+@keyframes animdash {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+//                surf
+
+.surf__subtitle{
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
+}
+
+.surf{
+  font-size: 50px;
+  background-image: url("../../build/img/surf-bg.png");
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 160px 0 210px;
+  .surf-box {
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 750px;
+  }
+}
 
 
 
