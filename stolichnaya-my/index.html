@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://deliveryWiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript">
+        window.jStoreConfig = {
+            'restaurant': "3f46ac68-54f4-4ea5-84c1-b7db224a544e",
+            'server': {
+                'url': 'https://deliverywiget.iiko.ru'
+            },
+            'urls': {
+                'documentRoot': ''
+            },
+        };
+    </script>
+    <script data-main="https://deliverywiget.iiko.ru/v2_0/app/config" src="https://deliverywiget.iiko.ru/v2_0/libs/require.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/style.css">
+    <title>Stolichnaya</title>
+</head>
+<body>
+<header class="section header">
+    <div class="container">
+        <div class="row align-items-center header-top">
+            <div class="col-md-2">
+                <a href="#" class="logo"><img src="./src/img/stolichnaya-logo.png" alt="Stolichnaya"></a>
+            </div>
+            <div class="col-md-4">
+                <h3>Адрес столовой</h3>
+                <a>ул. Кастанаевская 34с2</a>
+            </div>
+            <div class="col-md-3">
+                <h3>Часы работы</h3>
+                <p>Пн-Сб 8.00 – 18.00</p>
+            </div>
+            <div class="col-md-3">
+                <h3><a href="tel:+79999787580">+7 (999) 978-75-80</a></h3>
+                <a href="mailto:pitanie@gk-absolut.ru">pitanie@gk-absolut.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <nav class="navbar navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">#</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">МЕНЮ СТОЛОВОЙ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">МЕНЮ НА ДОСТАВКУ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ЗОНЫ доставки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-5 right-menu d-block">
+                    <ul>
+                        <li><a class="nav-link" href="#">О нас</a></li>
+                        <li><a class="nav-link" href="#">Доставка</a></li>
+                        <li><a class="nav-link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 right-menu-fixed d-none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3"><a href="#" class="logo"><img src="./src/img/stolichnaya-logo-black.png" alt="Stolichnaya"></a>
+                            </div>
+                        <div class="col-md-9">
+                            <ul class="dropdown-ul">
+                                <li class="dropdown info-dropdown align-middle">
+                                    <a data-toggle="dropdown" aria-expanded="false" data-hover="dropdown" class="current-link"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                                    <ul id="right-menu-ul" class="dropdown-menu fixed-right-menu-ul">
+                                        <li><a href="#" title="О нас">О нас</a></li>
+                                        <li><a href="#" title="Акции">Акции</a></li>
+                                        <li><a href="#" title="Доставка и оплата">Доставка и оплата</a></li>
+                                        <li><a href="#" title="Контакты">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a data-toggle="dropdown" aria-expanded="false" data-hover="dropdown" class="current-link"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu fixed-right-menu-ul">
+                                        <li><a href="#">Регистрация</a></li>
+                                        <li><a href="#">Авторизация</a></li>
+                                    </ul>
+                                </li>
+                                <li class="fixed-cart"><a id="fixed-cart" onclick=""><i class="fa fa-shopping-basket" aria-hidden="true"></i> <span id="cart-total">0</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /.section header -->
+<main class="main">
+    <div class="carousel">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img class="about-img" src="./src/img/cook.png" class="d-block w-100"
+                                             alt="КУК!">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h2>О нас</h2>
+                                        <p>О нас about</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet beatae
+                                            delectus ea explicabo fuga harum in, ipsa, nesciunt odit officiis
+                                            perspiciatis porro quas qui reiciendis rem sunt tempore voluptatum.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur
+                                            consequuntur culpa cumque doloribus eligendi et eum exercitationem fugit
+                                            nemo neque, obcaecati pariatur perferendis possimus praesentium quis
+                                            reprehenderit sed ullam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12"><h2>Обязательно попробуйте</h2></div>
+                                    <div class="col-md-4">
+                                        <div class="product-carousel-img">
+                                            <div class="product-button">
+                                                <img src="./src/img/product-1-370x395.jpg" alt="Пельмени">
+                                                <div class="order-now">
+                                                    <a href="#" class="button-order">заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-carousel-caption">
+                                            <h4 class="product-title">
+                                                <a href="#">Пельмешки</a>
+                                            </h4>
+                                            <p class="price">130</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-carousel-img">
+                                            <div class="product-button">
+                                                <img src="./src/img/product-2-370x395.jpg" alt="Макарошки">
+                                                <div class="order-now">
+                                                    <a href="#" class="button-order">заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-carousel-caption">
+                                            <h4 class="product-title">
+                                                <a href="#">Макарошки</a>
+                                            </h4>
+                                            <p class="price">100</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="product-carousel-img">
+                                            <div class="product-button">
+                                                <img src="./src/img/product-3-370x395.jpg" alt="Мороженое">
+                                                <div class="order-now">
+                                                    <a href="#" class="button-order">заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-carousel-caption">
+                                            <h4 class="product-title">
+                                                <a href="#">Мороженое</a>
+                                            </h4>
+                                            <p class="price">70</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="jstore-css">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 content-left-side">
+                        <div class="jstore-tag jstore-block-search"></div>
+                        <div id="lsp-block-userinfo" class="lsp-block-userinfo"></div>
+                        <div id="lsp-block-tree" class="lsp-block-menu-tree"></div>
+                        <div id="lsp-block-cart" class="lsp-block-cart"></div>
+                        <div id="lsp-block-gift" class="lsp-block-gift"></div>
+                        <div id="lsp-block-happy-hour" class="lsp-block-happy-hour"></div>
+                        <div id="lsp-block-recommendation" class="lsp-block-recommendation"></div>
+                    </div>
+                    <div class="col-md-9 content-right-side">
+                        <div class="tabs">
+                            <div class="tabs__links">
+                                <span>Отображение:</span>
+                                <a class="items-click active" href="#">Фото</a>
+                                <a class="list-click" href="#">Списком</a>
+                            </div>
+                        </div>
+
+                        <div id='lsp-block-content' class='lsp-block-content items'>
+                            <div class="preloader">
+                                <img class="preloader" src="./img/preloader.gif" alt="Меню загружается">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</main>
+<!-- /.main -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="build/js/script.js"></script>
+</body>
+</html>

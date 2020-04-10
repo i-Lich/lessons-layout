@@ -1,0 +1,253 @@
+$red: #b70000;
+$gray: #4d4d4d;
+// Fonts
+body {
+    font-size: 15px;
+    line-height: 1.66667;
+    font-weight: 300;
+    color: rgba(21, 21, 21, .8);
+}
+
+h1, h2, h3, h4, h5, h6, [class^=heading-]{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "pt serif",times new roman,Times,serif;
+    font-weight: 700;
+    color: $gray;
+    letter-spacing: 0;
+}
+
+h2{
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h2+p, .heading-2+p {
+    margin-top: 30px;
+}
+
+h3, .header h3>a{
+    color: #b70000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0;
+}
+
+*+p {
+    margin-top: 15px;
+}
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+
+//header
+.header-top p, .header-top a{
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7em;
+    letter-spacing: 0px;
+}
+
+.header-bottom.fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background: #b70000;
+    z-index: 3;
+}
+
+.header-bottom{
+    background: rgba(183, 0, 0, .8);
+}
+
+.header-bottom a:hover{
+    color: #ffffff;
+}
+
+.header-bottom .row>div {
+    //line-height: 58px;
+}
+
+.right-menu{
+    display: none;
+}
+
+.header-bottom .right-menu-fixed .dropdown-ul{
+    text-align: right;
+    height: 100%;
+    line-height: 58px;
+
+}
+
+.header-bottom .right-menu-fixed .dropdown-ul>li{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    width: 19.5%;
+    z-index: 2;
+}
+.header-bottom .right-menu-fixed .dropdown-ul li a {
+    display: block;
+    cursor: pointer;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.header-bottom .right-menu-fixed ul li i{
+    color: #fff;
+    font-size: 22px;
+}
+
+.header-bottom{
+    font-weight: 600;
+}
+
+.header .right-menu{
+    padding: .5rem 1rem;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #fff;
+    float: left;
+}
+
+.nav-link::after, product-title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+.nav-link:hover::after, product-title:hover::after{
+    transform: scale(1);
+}
+
+.header-bottom .logo img{
+    height: 53px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+
+
+.fixed-right-menu-ul {
+    right: -4px;
+    left: auto;
+    background-color: #b70000;
+    top: 97%;
+    border-radius: 0;
+    width: auto;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-width: 250px;
+}
+
+.fixed-right-menu-ul li a {
+    color: #fff;
+    padding: 0 7px;
+    font-size: 16px;
+}
+
+#cart-total{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+// main-carousel
+.main .carousel{
+    min-height: 450px;
+}
+.carousel-inner>.row{
+    padding: 20px 0;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #b70000;
+    background-image: none;
+    background-color: #fff;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 27px;
+    color: #b70000;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 27px;
+    color: #b70000;
+}
+
+.product-button>img{
+    height: 280px;
+    width: 100%;
+}
+.product-carousel-caption .product-title, .product-carousel-caption .product-title>a{
+    margin: 20px 0 0 0;
+    text-align: center;
+    color: $gray;
+}
+.product-carousel-caption .price{
+    text-align: center;
+    color: $red;
+    font-weight: 600;
+}
+
+.product-carousel-caption .price::after{
+    content: '\20BD';
+}
+.order-now{
+    background-color: $gray;
+    color: #fff;
+    position: absolute;
+    left: 33%;
+    bottom: 35%;
+
+    display: none;
+}
+.order-now>a{
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.order-now:hover{
+    background-color: $red;
+}
+
+.product-button:hover .order-now{
+    display: block;
+}
