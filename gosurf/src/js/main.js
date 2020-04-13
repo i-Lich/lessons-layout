@@ -12,7 +12,13 @@ $(function(){
     $('.slider-dots').slick({
         infinite: true,
         slidesToShow: 4,
+        slidesToScroll: 4,
         asNavFor: '.header__slider'
     });
 
+    $('.surf-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
 });
