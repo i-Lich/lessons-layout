@@ -203,25 +203,27 @@
 
 //                surf
 
+.surf{
+  background-image: url("../../build/img/surf-bg.png");
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 160px 0 210px;
+}
+
 .surf__subtitle{
   text-align: right;
   padding-right: 80px;
   margin-top: -86px;
 }
 
-.surf{
-  font-size: 50px;
-  background-image: url("../../build/img/surf-bg.png");
-  background-position: right 200px;
+.surf-box {
   background-repeat: no-repeat;
-  background-size: auto;
-  padding: 160px 0 210px;
-  .surf-box {
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    height: 750px;
-  }
+  background-position: center;
+  background-size: cover !important;
+  min-height: 750px;
 }
+
 
 
 

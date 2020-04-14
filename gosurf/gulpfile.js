@@ -15,15 +15,15 @@ const browserSync = require('browser-sync').create();
 
 //scss файлы
 const cssFiles = [
+    // './node-modules/animate.css/animate.css',
     './src/scss/main.scss',
-    './src/scss/slick.css',
-    './node_modules/animate.css/animate.css'
+    './src/scss/slick.css'
 ];
 
 //js файлы
 const jsFiles = [
     './src/js/jquery-3.4.1.min.js',
-    './src/js/slick.min.js',
+    './src/js/slick.js',
     './src/js/lib.js',
     './src/js/main.js'
 ];
@@ -42,7 +42,7 @@ function styles() {
         .pipe(cleanCSS({
             level: 2
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./'))
         //выходная папка для CSS файла
         .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.stream());
@@ -64,8 +64,8 @@ function scripts() {
 //сжатие пикч
 function images() {
     return gulp.src('./src/img/**')
-    .pipe(image())
-    .pipe(gulp.dest('./build/img/'))
+        .pipe(image())
+        .pipe(gulp.dest('./build/img/'))
 };
 
 //удалить лишние файлы
