@@ -10,10 +10,10 @@
 
 .header__slider{
   &-item {
-    height: 100vh !important;
     background-image: url("../../build/img/header-bg.jpg");
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     background-position: center;
     position: relative;
   }
@@ -74,9 +74,9 @@
     }
   }
 }
-.slick-track{
-  transform: none !important;
-}
+//.slick-track{
+//  transform: none !important;
+//}
 .dots-box{
   width: 200px;
   display: flex;
@@ -223,9 +223,6 @@
   background-size: cover !important;
   min-height: 750px;
 }
-
-
-
 
 
 

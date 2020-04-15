@@ -15,17 +15,17 @@ const browserSync = require('browser-sync').create();
 
 //scss файлы
 const cssFiles = [
-    // './node-modules/animate.css/animate.css',
-    './src/scss/main.scss',
-    './src/scss/slick.css'
+    './node_modules/animate.css/animate.css',
+    './src/scss/slick.css',
+    './src/scss/main.scss'
 ];
 
 //js файлы
 const jsFiles = [
-    './src/js/jquery-3.4.1.min.js',
-    './src/js/slick.js',
+    './src/js/jquery-3.5.0.min.js',
     './src/js/lib.js',
-    './src/js/main.js'
+    './src/js/slick.js',
+    './src/js/main.js',
 ];
 //стили
 function styles() {
