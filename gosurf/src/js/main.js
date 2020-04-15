@@ -20,9 +20,10 @@ $(function(){
 
     $('.surf-slider').slick({
         dots:false,
-        // fade: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        prevArrow: '<img class="slider-arrows slider-arrows__left" src="../../build/img/arrows-left.svg" alt="Назад">',
+        nextArrow: '<img class="slider-arrows slider-arrows__right" src="../../build/img/arrows-right.svg" alt="Далее">',
     });
 });
