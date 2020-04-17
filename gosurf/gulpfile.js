@@ -22,7 +22,7 @@ const cssFiles = [
 
 //js файлы
 const jsFiles = [
-    './src/js/jquery-3.5.0.min.js',
+    './node_modules/jquery/dist/jquery.min.js',
     './src/js/lib.js',
     './src/js/slick.js',
     './src/js/main.js',
