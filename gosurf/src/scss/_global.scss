@@ -13,8 +13,8 @@ body{
   font-weight: 400;
   font-size: 16px;
   background-color: #171919;
-  color: gray;
-  text-transform: capitalize;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 body a{
@@ -129,6 +129,7 @@ a{
   &__head{
     font-weight: 800;
     font-size: 40px;
+    color: #ffffff;
     span{
       font-weight: 100;
     }
@@ -137,4 +138,7 @@ a{
 
 .surf, .travel{
   padding: 160px 0 120px;
+}
+.travel{
+  padding-bottom: 265px;
 }
