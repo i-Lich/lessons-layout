@@ -74,7 +74,11 @@ $(function(){
             spinner.find("input").val(newVal);
             spinner.find("input").trigger("change");
         });
-
     });
+    let summ = ($('.guests').val() * $('.summ').data('nights')) * $('.nights').val();
+    $('.summ').html('$' + summ.toFixed(1));
+    // let summ = $('.nights').val() * $('.summ').data('nights') + $('.guests').val() * $('.summ').data('guests');
+    // let summ = '650';
+    // $('.summ').html('$' + summ);
 
 });
