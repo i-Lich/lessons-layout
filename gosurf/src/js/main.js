@@ -35,7 +35,7 @@ $(function(){
         asNavFor: '.surf-slider',
         focusOnSelect: true
     });
-    $('.holder__slider').slick({
+    $('.holder__slider, .shop__slider').slick({
         infinite:true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -75,10 +75,23 @@ $(function(){
             spinner.find("input").trigger("change");
         });
     });
-    let summ = ($('.guests').val() * $('.summ').data('nights')) * $('.nights').val();
-    $('.summ').html('$' + summ.toFixed(1));
-    // let summ = $('.nights').val() * $('.summ').data('nights') + $('.guests').val() * $('.summ').data('guests');
-    // let summ = '650';
-    // $('.summ').html('$' + summ);
+
+    $('.quantity-button').on('click', function () {
+        let parents = $(this).parents('.holder-slider__info');
+        let summ = $('.summ', parents).data('nights') * $('.nights', parents).val() * $('.guests', parents).val();
+        $('.summ', parents).html('$' + summ.toFixed(1));
+    });
+
+    $('.quantity').each(function () {
+            let parents = $(this).parents('.holder-slider__info');
+            let summ = $('.summ', parents).data('nights') * $('.nights', parents).val() * $('.guests', parents).val();
+            $('.summ', parents).html('$' + summ.toFixed(1));
+        });
+
+    $('.surfboard-box__circle').on('click', function () {
+        $(this).toggleClass('active');
+    });
+
+
 
 });
