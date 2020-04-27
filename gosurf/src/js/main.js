@@ -92,6 +92,8 @@ $(function(){
         $(this).toggleClass('active');
     });
 
-
+    $('.menu-btn').on('click', function (){
+     $('.menu').toggleClass('active')
+    })
 
 });
