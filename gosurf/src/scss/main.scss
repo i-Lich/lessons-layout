@@ -243,10 +243,11 @@
 }
 
 .surf-box {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover !important;
-  min-height: 750px;
+  &__wrapper{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover !important;
+  }
   &__inner{
     min-height: 750px;
     background: rgba(#1c2121, .85);
@@ -335,6 +336,7 @@
   margin: 0 auto;
   .slick-list{
     min-height: 635px;
+    overflow: visible;
   }
   .slick-current{
     .slider-dots__content{
@@ -402,6 +404,8 @@
   height: 21px;
   background-color: $turquoise;
   border-radius: 50%;
+  box-shadow: 0px 0px 35px rgba(74,246,205,0.837777);
+
 }
 
 .slider-dots__content{
@@ -415,15 +419,15 @@
     border-bottom: 20px solid #4af6cd;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-style: solid;
-    border-width: 0 10px 22px;
-    border-color: transparent transparent $turquoise transparent;
+    //border-style: solid;
+    //border-width: 0 10px 22px;
+    //border-color: transparent transparent $turquoise transparent;
     content: '';
     position: absolute;
     width: 0;
     height: 0;
     bottom: -23px;
-    left: 50%;
+    left: calc(50% - 2px);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -439,7 +443,7 @@
   .slider-dots__content{
     transform: translateX(0);
     &::before{
-      left: 0;
+      left: -1.5px;
     }
   }
 }

@@ -15,21 +15,55 @@ $(function(){
         // infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.header__slider'
+        asNavFor: '.header__slider',
+        responsive: [
+            {
+                breakpoint:961,
+                settings: "unslick"
+            }
+        ]
     });
 
     $('.surf-slider').slick({
         dots:false,
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        // slidesToShow: 4,
+        // slidesToScroll: 1,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="../../build/img/arrows-left.svg" alt="Назад">',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="../../build/img/arrows-right.svg" alt="Далее">',
-        asNavFor: '.slider-map'
+        asNavFor: '.slider-map',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1210,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
     $('.slider-map').slick({
-        slidesToShow: 8,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         asNavFor: '.surf-slider',
