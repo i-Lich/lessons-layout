@@ -15,8 +15,8 @@ const browserSync = require('browser-sync').create();
 
 //scss файлы
 const cssFiles = [
-    './node_modules/animate.css/animate.css',
-    './src/scss/slick.css',
+    // './node_modules/animate.css/animate.css',
+    // './src/scss/slick.css',
     './src/scss/main.scss'
 ];
 
@@ -28,25 +28,36 @@ const jsFiles = [
     './src/js/main.js',
 ];
 //стили
+
+
 function styles() {
-    return gulp.src(cssFiles)
+    return gulp.src('./src/scss/main.scss')
         .pipe(sourcemaps.init())
-        .pipe(concat('style.scss'))
         .pipe(sass().on('error', sass.logError))
-
-        .pipe(autoprefixer({
-            overrideBrowserslist: ['last 2 versions'],
-            cascade: false
-        }))
-
-        .pipe(cleanCSS({
-            level: 2
-        }))
-        .pipe(sourcemaps.write('./'))
-        //выходная папка для CSS файла
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./build/css'))
         .pipe(browserSync.stream());
 }
+
+// function styles() {
+//     return gulp.src(cssFiles)
+//         .pipe(sourcemaps.init())
+//         // .pipe(concat('style.scss'))
+//         .pipe(sass().on('error', sass.logError))
+//
+//         // .pipe(autoprefixer({
+//         //     overrideBrowserslist: ['last 2 versions'],
+//         //     cascade: false
+//         // }))
+//
+//         // .pipe(cleanCSS({
+//         //     level: 2
+//         // }))
+//         .pipe(sourcemaps.write())
+//         //выходная папка для CSS файла
+//         .pipe(gulp.dest('./build/css'))
+//         .pipe(browserSync.stream());
+// }
 
 //скрипты
 
@@ -81,14 +92,15 @@ function watch(){
         }
     });
     gulp.watch('./src/img/**', images);
-    gulp.watch('./src/scss/**/*.css', styles);
-    gulp.watch('./src/scss/**/*.sass', styles);
+    // gulp.watch('./src/scss/**/*.css', styles);
+    // gulp.watch('./src/scss/**/*.sass', styles);
     gulp.watch('./src/scss/**/*.scss', styles);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch("./*.html").on('change', browserSync.reload);
 
 }
 
+// gulp.task('styles', styles);
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('images', images);
