@@ -2,6 +2,8 @@
 @import "libs";
 @import "fonts";
 @import "global";
+//@import "node_modules/animate.css/animate.min.css";
+//@import "node_modules/animate.css/";
 .header{
   position: relative;
   height: 100vh;
@@ -415,6 +417,7 @@
   position: absolute;
   bottom: 35px;
   transform: translateX(-50%);
+  z-index: 2;
   &::before {
     border-bottom: 20px solid #4af6cd;
     border-left: 12px solid transparent;

@@ -15,6 +15,9 @@ body{
   background-color: #171919;
   color: #ffffff;
   text-transform: uppercase;
+  // for wow.js
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 body a{
@@ -82,6 +85,9 @@ a{
 
 .title{
   span{
+    display: inline-block;
+  }
+  div{
     font-weight: 800;
     font-size: 200px;
     color: rgba(#fff, .02);
