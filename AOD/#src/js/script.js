@@ -1,4 +1,5 @@
 @@include('../../node_modules/jquery/dist/jquery.min.js')
+@@include('../../node_modules/slick-carousel/slick/slick.min.js')
 // проверка браузера на поддержку webp
 function testWebP(callback) {
     var webP = new Image();
@@ -37,3 +38,20 @@ $('.icon-menu').click(function () {
     $('.menu__body').toggleClass('active');
     $('body').toggleClass('lock');
 });
+
+//slider
+$(document).ready(function(){
+    $('.slider__body').slick({
+        dots:true,
+        arrows:false,
+        infinite:false,
+        // accessibility:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed:3500
+
+    });
+});
+// if ($('.slider__body').length > 0){
+//
+// }
