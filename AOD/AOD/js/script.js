@@ -47,8 +47,9 @@ $(document).ready(function(){
     $('.slider__body').slick({
         dots:true,
         arrows:false,
-        infinite:false,
-        // accessibility:false,
+        infinite:true,
+        adaptiveHeight:true,
+        accessibility:false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed:3500
